@@ -1,6 +1,5 @@
-let mongoose;
-require('dotenv').config();
-mongoose = require('mongoose');
+require('dotenv').config({ path: './sample.env' });
+const mongoose = require('mongoose');
 
 try {
   mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -62,14 +61,14 @@ const queryChain = (done) => {
 
 //----- **DO NOT EDIT BELOW THIS LINE** ----------------------------------
 
-exports.PersonModel = Person;
-exports.createAndSavePerson = createAndSavePerson;
-exports.findPeopleByName = findPeopleByName;
-exports.findOneByFood = findOneByFood;
-exports.findPersonById = findPersonById;
-exports.findEditThenSave = findEditThenSave;
-exports.findAndUpdate = findAndUpdate;
-exports.createManyPeople = createManyPeople;
-exports.removeById = removeById;
-exports.removeManyPeople = removeManyPeople;
-exports.queryChain = queryChain;
+// exports.PersonModel = Person;
+// exports.createAndSavePerson = createAndSavePerson;
+// exports.findPeopleByName = findPeopleByName;
+// exports.findOneByFood = findOneByFood;
+// exports.findPersonById = findPersonById;
+// exports.findEditThenSave = findEditThenSave;
+// exports.findAndUpdate = findAndUpdate;
+// exports.createManyPeople = createManyPeople;
+// exports.removeById = removeById;
+// exports.removeManyPeople = removeManyPeople;
+// exports.queryChain = queryChain;
